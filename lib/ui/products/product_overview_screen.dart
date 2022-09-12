@@ -42,9 +42,9 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
 
   Widget buildProductFilterMenu() {
     return PopupMenuButton(
-      onSelected: (FilterOptions onSelectedValue) {
+      onSelected: (FilterOptions selectedValue) {
         setState(() {
-          if (onSelectedValue == FilterOptions.favorites) {
+          if (selectedValue == FilterOptions.favorites) {
             _showOnlyFavorites = true;
           } else {
             _showOnlyFavorites = false;
