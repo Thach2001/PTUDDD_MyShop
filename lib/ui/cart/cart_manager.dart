@@ -5,7 +5,7 @@ import '../../models/product.dart';
 
 
 class CartManager with ChangeNotifier {
-  final Map<String, CartItem> _items = {
+  Map<String, CartItem> _items = {
     'p1': CartItem(
       id: 'c1',
       title: 'Red Shirt',
@@ -80,7 +80,7 @@ class CartManager with ChangeNotifier {
   }
 
   void clear() {
-    //_items = {};
+    _items = {};
     notifyListeners();
   }
 }
